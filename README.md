@@ -11,7 +11,7 @@ Our ball and plate system can be represtned using Figure 1a and 1b below
  
  
 ## Controller Design 
-
+Conventional modern control theory uses the state space representation approach and is useful because criteria desired to a control system can be accomplished. One very important advantage to this theory is the ability to manipulate pole placement while incorporating full state feedback. The beauty of the state space representation is that it allows higher order systems to be modeled as several first order systems. However for this report we are using state space only to check for controllability and observability.  Because humans are spaciall thinkers that are limited, the rest of the control theory is handled by software that makes using state space representations easy. 
 ## Simulink
 
 ## Matlab and Coppelia
