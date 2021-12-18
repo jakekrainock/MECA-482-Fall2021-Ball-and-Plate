@@ -81,7 +81,7 @@ For the following two design criteria have to be chosen the percent overshoot an
   Damping = 0.69
 </p>
 
-Next the MATLAB is used to locate the roots shown in the figure to the left. From this figure it is noticed that the system has two poles one going to negative and positive infinity. Then to build a lead compensator a pole and zero need to be chosen. For this report, a pole was added at 5 with a zero at 0.01 which is shown in the right figure. Finally using the root locus location finder function in MATLAB the gain for the system is found. The system has a gain (k) of 4.5252, the code and outputs to support this are shown in the Appendix. 
+Next the MATLAB is used to locate the roots shown in the figure to the left. From this figure it is noticed that the system has two poles one going to negative and positive infinity. Then to build a lead compensator a pole and zero need to be chosen. For this report, a pole was added at 5 with a zero at 0.01 which is shown in the right figure. Finally using the root locus location finder function in MATLAB the gain for the system is found. The system has a gain (k) of 4.5252 in the *x-axis* and a gain of 15.1512 in the *z-axis*. The code and outputs to support this are shown in the Appendix. 
 
 
 <p align="center">
