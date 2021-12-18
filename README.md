@@ -119,5 +119,11 @@ To connect these two programs an API server is started by CoppeliaSim then MATLA
 
 ## VIII.Appendix
 <p align="center">
-  <img width="700" img src="Figures/Simulinkstepreps.png" >
+  <img width="700" img src="Figures/Appendix1.png" >
+</p>
+<p align="center">
+  <img width="700" img src="Figures/Appendix2.png" >
+</p>
+<p align="center">
+  <img width="700" img src="GainrootLocus.png" >
 </p>
