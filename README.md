@@ -51,7 +51,7 @@ By taking the LapLace transform of the Eq.(14-15) the system is represented in t
 Conventional modern control theory uses the state space representation approach and is useful because criteria desired to a control system can be accomplished. One very important advantage to this theory is the ability to manipulate pole placement while incorporating full state feedback. The beauty of the state space representation is that it allows higher order systems to be modeled as several first order systems. However for this report we are using state space only to check for controllability and observability.  Due to the complexity of matrix operations, the rest of the control theory is handled by software that makes use of state space representations or the transfer function. 
 
 <p align="center">
-  <img height="600" img src="Figures/TF_SPR.png" >
+  <img width="300" height="600" img src="Figures/TF_SPR.png" >
   <img height="600" img src="Figures/outputTF.png" >
 </p>
 
@@ -60,7 +60,7 @@ With the state space representation the controllability and observability of the
 Qc = [B AB A^2b A^3B]
 &  Qo = [C AC A^2C A^3C]
 </p>
-Using these equations the controllability and observability of the system are found to not be zero indicating that the ball and plate system can be controlled and observed. Next for the control method, the group chose to utilize the root locus method. To accomplish this the system poles and zero must be known. Using matlab this is shown below along with the step response of the system. From the figures, the system has two poles at the origin and the system needs control as with the step response shown the ball will roll off the plate. <br/>
+Using these equations the controllability and observability matrices of the system are found to not be equal to zero indicating that the system can be controlled and observed. Next for the control method, the group chose to utilize the root locus method. To accomplish this the system poles and zero must be known. Using matlab this is shown below along with the step response of the system. From the figures, the system has two poles at the origin and the system needs control as with the step response shown the ball will roll off the plate. <br/>
 
 <p align="center">
   <img height="300" img src="Figures/polezeromap.png" >
