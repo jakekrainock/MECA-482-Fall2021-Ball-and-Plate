@@ -89,7 +89,7 @@ Next the MATLAB is used to locate the roots shown in the figure to the left. Fro
   <img height="300" img src="Figures/RootlocusPZ.png" >
 </p>
 
-## V.Simulink
+## IV.Simulink
 With all this information the simulink model can be built using MATLAB/Simulink. To begin since the root locus method was chosen a user defined function for the plant of a ball on a beam is used. The model was provided by Prof. Dawn Tilbury at the University of Michigan and Prof. Bill Messner at Carnegie Mellon with funding from NSF. With further support from the MathWorks in 2011 and 2017, Prof. Messner, Prof. Rick Hill (Detroit Mercy), and PhD Student JD Taylor (CMU). 
 
 <p align="center">
@@ -108,7 +108,22 @@ For the verifaction of the system stability the scope tool was added and the gen
   <img width="700" img src="Figures/Simulinkstepreps.png" >
 </p>
 
-## VI.Matlab and CoppeliaSim
+## V.Matlab and CoppeliaSim
 To connect these two programs an API server is started by CoppeliaSim then MATLAB joins this server. This is easily verfied by the comand window in MATLAB indicates if the connection was successful. For this portion the provided ball and plate Coppeliascene was used to test connectivity and create the code needed to ensure proper control of the system. The two programs were able to connnect but had errors in trying to send information back and forth. CoppeliaSim was able to start the simulation and wait for MATLAB to connect, which it was able to do. Then MATLAB tries to request childscript to obtain object information but always encounters an indexing error, with CoppeliaSim indicating there was an error in trying to access the mentioned childscript. This problem hindered running the designed Simulink controller on the CoppeliaSim model. 
 
+## VI.References
+- [ ] Fabregas, E., Dormido-Canto, S., &amp; Dormido, S. (2017). Virtual and remote laboratory with the ball and Plate System. IFAC-PapersOnLine, 50(1), 9132–9137. https://doi.org/10.1016/j.ifacol.2017.08.1716 
+- [ ] Kumar, J. R., Showme, N., Aravind, M., &amp; Akshay, R. (2019, February 7). Design and control of ball on plate system. ResearchGate. Retrieved December 18, 2021, from https://www.researchgate.net/publication/316628039_Design_and_control_of_ball_on_plate_system 
+- [ ] Tilbury, D., Messner, B., &amp; Hill, R. (n.d.). Control Tutorials For MATLAB &amp; SIMLINK. Control tutorials for MATLAB and Simulink - Home. Retrieved December 18, 2021, from https://ctms.engin.umich.edu/CTMS/index.php?aux=Home 
+- [ ] Zarzycki, K., &amp; Ławryńczuk, M. (2021). Fast real-time model predictive control for a ball-on-plate process. Sensors, 21(12), 3959. https://doi.org/10.3390/s21123959 
 
+## VII.Appendix
+<p align="center">
+  <img width="700" img src="Figures/Appendix1.png" >
+</p>
+<p align="center">
+  <img width="700" img src="Figures/Appendix2.png" >
+</p>
+<p align="center">
+  <img width="700" img src="Figures/GainrootLocus.png" >
+</p>
