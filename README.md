@@ -90,7 +90,7 @@ Next the MATLAB is used to locate the roots shown in the figure to the left. Fro
 </p>
 
 ## V.Simulink
-With all this information the simulink model can be built using MATLAB/Simulink. To begin, since the root locus method was chosen a user defined function for the plant of a ball on a beam is used. The model was provided by Prof. Dawn Tilbury at the University of Michigan and Prof. Bill Messner at Carnegie Mellon with funding from NSF. With further support from the MathWorks in 2011 and 2017, Prof. Messner, Prof. Rick Hill (Detroit Mercy), and PhD Student JD Taylor (CMU). 
+With all this information the simulink model can be built using MATLAB/Simulink. To check system response a user defined function for the plant of a ball on a beam is used. The model was provided by Prof. Dawn Tilbury at the University of Michigan and Prof. Bill Messner at Carnegie Mellon with funding from NSF. With further support from the MathWorks in 2011 and 2017, Prof. Messner, Prof. Rick Hill (Detroit Mercy), and PhD Student JD Taylor (CMU). 
 
 <p align="center">
   <img width="700" img src="Figures/BallLangr.png" >
