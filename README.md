@@ -2,9 +2,8 @@
 Group 6: Joseluis Zamora, Jesus Hernandez, Joseph Marlowe, Gerardo Munguia, Jacob Krainock 
 
 ## Introduction 
-For this project a control system must be designed using Matlab, Simulink and Coppelia. This 
-control system will move a steel ball on a plate controlled by two servo motors. The ball will move in a user specified pattern. The options of the patterns the ball will move in is a rectangle, circle, and a figure eight.
-
+The control system design in this report will utilize a ball and plate system. A ball and plate system involves a ball that freely moves about a plate that will tilt due to two servor motors. These servor motors are oriented in two different angular orientations. The reqiurements of the system are listed below:
+- [ ] 
 
 ## Mathmatical Model
 Our ball and plate system can be represtned using Figure 1a and 1b below
