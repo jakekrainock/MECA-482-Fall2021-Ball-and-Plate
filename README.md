@@ -128,7 +128,7 @@ To connect these two programs an API server is started by CoppeliaSim then MATLA
   <img width="300" img src="Figures/GainrootLocus.png" >
 </p>
 <p align="center">
-  <img width="300" img src="Figures/Zgain.png" >
+  <img width="300" img src="Figures/Zsystemgain.png" >
 </p>
 <p align="center">
   <img width="300" img src="Figures/ZTF.png" >
