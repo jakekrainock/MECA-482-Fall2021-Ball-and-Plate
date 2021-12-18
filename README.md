@@ -12,8 +12,9 @@ Along with these reqiurements, there are some assumptions used to design the con
 - [ ] Small angle movements from the servo motors
 ## II.Mathematical Model
 For deriving a mathematical model the system in question must be reduced to a simpler model to find the transfer function. For a ball and plate system it can be reduced to a ball on a beam system. Since the design of the ball and plate system will have identical setups in the *x-y* and *y-z* plane, only the *x-y* plane is modeled below in Figure 1.
-
-![](Figures/mathmaticmodel.png) <br>
+<p align="center">
+  <img width="460" height="300" img src="Figures/mathmaticmodel.png" alt="Sublime's custom image"/>
+</p>
  **Figure 1**: Ball and Plate system free body diagram of a) the system and b) the ball. <br>
  
 From this simplified model the angular and linear forces can be found and equated. To begin it is known that to balance the ball the forces must be balanced. This is used to find Eq.(1). Then using the assumption that there will be no slipping the angular and linear acceleration of the ball are related, shown in Eq.(2-3). 
