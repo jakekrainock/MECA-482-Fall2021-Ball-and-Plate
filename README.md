@@ -2,13 +2,14 @@
 Group 6: Joseluis Zamora, Jesus Hernandez, Joseph Marlowe, Gerardo Munguia, Jacob Krainock 
 
 ## Introduction 
-The control system design in this report will utilize a ball and plate system. A ball and plate system involves a ball that freely moves about a plate that will tilt due to two servor motors. These servor motors are oriented in two different angular orientations. The reqiurements of the system are listed below:
-- [ ] 
+The control system design in this report will utilize a ball and plate system. A ball and plate system involves a ball that freely moves about a plate that will tilt due to two servor motors. These servor motors are oriented in two different angular orientations to achieve the desired range or motion. The requirements of the system are listed below:
+- [ ] Balance a ball on the center of the plate
+- [ ] React to system disburbances
 
-## Mathmatical Model
-Our ball and plate system can be represtned using Figure 1a and 1b below
+## Mathematical Model
+For deriving a mathematical the system in question is reduced to a simpler model to find the transfer function. For a ball and plate system it can be reduced to a ball on a beam system. Since the design of the ball and plate system will have identical in the x-y and ¬y-z plane only the x-y plane is modeled below in Figure 1.
 ![](Figures/mathmaticmodel.png) <br>
- **Figure 1a and 1b.** Ball on a plate system model and free body diagram of ball<br>
+ **Figure 1**: Ball and Plate system free body diagram of a) the system and b) the ball. <br>
  
  
 ## Controller Design 
