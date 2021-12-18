@@ -13,7 +13,7 @@ Along with these reqiurements, there are some assumptions used to design the con
 ## II.Mathematical Model
 For deriving a mathematical model the system in question must be reduced to a simpler model to find the transfer function. For a ball and plate system it can be reduced to a ball on a beam system. Since the design of the ball and plate system will have identical setups in the *x-y* and *y-z* plane, only the *x-y* plane is modeled below in Figure 1.
 <p align="center">
-  <img width="460" height="300" img src="Figures/mathmaticmodel.png" alt="Sublime's custom image"/>
+  <img height="300" img src="Figures/mathmaticmodel.png" alt="Sublime's custom image"/>
 </p>
  **Figure 1**: Ball and Plate system free body diagram of a) the system and b) the ball. <br>
  
@@ -34,6 +34,9 @@ The system will utilize a solid ball and as such will have the moment of inertia
 
 ![](Figures/eq11-15.png) <br>
 
+By taking the LapLace transform of the Eq.(14-15) the system is represented in s-domain shown in Eq.(16-17). Then by dividing the input of the system by the output the transfer function of the ball and plate system in two different axis are found, shown in Eq.(18-19)
+
+![](Figures/eq16-19.png) <br>
 
 ## III.Controller Design 
 Conventional modern control theory uses the state space representation approach and is useful because criteria desired to a control system can be accomplished. One very important advantage to this theory is the ability to manipulate pole placement while incorporating full state feedback. The beauty of the state space representation is that it allows higher order systems to be modeled as several first order systems. However for this report we are using state space only to check for controllability and observability.  Because humans are spaciall thinkers that are limited, the rest of the control theory is handled by software that makes using state space representations easy. 
