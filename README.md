@@ -7,7 +7,8 @@ The control system design in this report will utilize a ball and plate system. A
 - [ ] React to system disburbances
 
 ## Mathematical Model
-For deriving a mathematical the system in question is reduced to a simpler model to find the transfer function. For a ball and plate system it can be reduced to a ball on a beam system. Since the design of the ball and plate system will have identical in the x-y and ¬y-z plane only the x-y plane is modeled below in Figure 1.
+For deriving a mathematical the system in question is reduced to a simpler model to find the transfer function. For a ball and plate system it can be reduced to a ball on a beam system. Since the design of the ball and plate system will have identical in the *x-y* and *y-z* plane, only the *x-y* plane is modeled below in Figure 1.
+
 ![](Figures/mathmaticmodel.png) <br>
  **Figure 1**: Ball and Plate system free body diagram of a) the system and b) the ball. <br>
  
