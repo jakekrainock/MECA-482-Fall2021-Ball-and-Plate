@@ -118,11 +118,11 @@ For the ball and plate system the control needs to be used for the *x* and *z ax
 To connect these two programs an API server is started by CoppeliaSim then MATLAB joins this server. This is easily verified by the command window in MATLAB which indicates if the connection was successful. For this portion the provided ball and plate Coppeliascene was used to test connectivity and create the code needed to ensure proper control of the system. The two programs were able to connect but had errors in trying to send information back and forth. CoppeliaSim was able to start the simulation and wait for MATLAB to connect, which it was able to do. Then MATLAB tries to request childscript to obtain object information but always encounters an indexing error, with CoppeliaSim indicating there was an error in trying to access the mentioned childscript. This problem hindered running the designed Simulink controller on the CoppeliaSim model. 
 
 <p align="center">
-  <img width="300" img src="Figures/errorMATLAB.png" >
+  <img width="600" img src="Figures/errorMATLAB.png" >
 </p>
 
 <p align="center">
-  <img width="300" img src="Figures/MATLABconnect.png" >
+  <img width="600" img src="Figures/MATLABconnect.png" >
 </p>
 
 ## VII.References
