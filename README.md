@@ -117,6 +117,14 @@ For the ball and plate system the control needs to be used for the *x* and *z ax
 ## VI.Matlab and CoppeliaSim
 To connect these two programs an API server is started by CoppeliaSim then MATLAB joins this server. This is easily verified by the command window in MATLAB which indicates if the connection was successful. For this portion the provided ball and plate Coppeliascene was used to test connectivity and create the code needed to ensure proper control of the system. The two programs were able to connect but had errors in trying to send information back and forth. CoppeliaSim was able to start the simulation and wait for MATLAB to connect, which it was able to do. Then MATLAB tries to request childscript to obtain object information but always encounters an indexing error, with CoppeliaSim indicating there was an error in trying to access the mentioned childscript. This problem hindered running the designed Simulink controller on the CoppeliaSim model. 
 
+<p align="center">
+  <img width="300" img src="Figures/errorMATLAB.png" >
+</p>
+
+<p align="center">
+  <img width="300" img src="Figures/MATLABconnect.png" >
+</p>
+
 ## VII.References
 - [ ] Fabregas, E., Dormido-Canto, S., &amp; Dormido, S. (2017). Virtual and remote laboratory with the ball and Plate System. IFAC-PapersOnLine, 50(1), 9132–9137. https://doi.org/10.1016/j.ifacol.2017.08.1716 
 - [ ] Kumar, J. R., Showme, N., Aravind, M., &amp; Akshay, R. (2019, February 7). Design and control of ball on plate system. ResearchGate. Retrieved December 18, 2021, from https://www.researchgate.net/publication/316628039_Design_and_control_of_ball_on_plate_system 
