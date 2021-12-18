@@ -60,7 +60,34 @@ With the state space representation the controlability and oberservability of th
 Qc = [B AB A^2b A^3B]
 &  Qo = [C AC A^2C A^3C]
 </p>
-Using these equation the controlability and observability of the system are found to not be zero indicating that the ball and plate system can be controlled and observed. 
+Using these equation the controlability and observability of the system are found to not be zero indicating that the ball and plate system can be controlled and observed. Next for control method, the group chose to utilize the root locus method. To accomplish this the system poles and zero must be known. Using matlab this is shown below along with the step response of the system. From the figures, the system has two poles at the origin and the system needs control as with the step response shown the ball will roll off the plate. <br/>
+
+<p align="center">
+  <img height="300" img src="Figures/polezeromap.png" >
+  <img height="300" img src="Figures/StepRepons.png" >
+</p>
+
+For the following two design criteria have to be chosen the percent overshoot and the settling time. With values chosen for these two the natural frequency and damping of the system are calculated.
+<p align="center">
+%OS <= 5%
+</p>
+<p align="center">
+  Ts <= 4s
+</p>
+<p align="center">
+  Wn = 1.44
+</p>
+<p align="center">
+  Damping = 0.61
+</p>
+
+Next the MATLAB is used to locate the roots shown in the figure to the left. From this figure it is noticed that the system have two poles one going to negative and positive infinity. Then to build a lead compensator a pole and zero need to be chosen. For this report, a pole was added at 5 with a zero at 0.01 which is shown in the right figure. Finally using the root locus location finder function in MATLAB the gain for the system is found. The system has a gain (k) of 4.5252, the code and outputs to support this are shown in the Appendix. 
+
+
+<p align="center">
+  <img height="300" img src="Figures/RootLocusO.png" >
+  <img height="300" img src="Figures/RootlocusPZ.png" >
+</p>
 
 ## V.Simulink
 
