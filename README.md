@@ -13,33 +13,55 @@ Along with these reqiurements, there are some assumptions used to design the con
 ## II.Mathematical Model
 For deriving a mathematical model the system in question must be reduced to a simpler model to find the transfer function. For a ball and plate system it can be reduced to a ball on a beam system. Since the design of the ball and plate system will have identical setups in the *x-y* and *y-z* plane, only the *x-y* plane is modeled below in Figure 1.
 <p align="center">
-  <img height="300" img src="Figures/mathmaticmodel.png" alt="Sublime's custom image"/>
+  <img height="300" img src="Figures/mathmaticmodel.png" alt="Sublime's custom image">
 </p>
  **Figure 1**: Ball and Plate system free body diagram of a) the system and b) the ball. <br>
  
 From this simplified model the angular and linear forces can be found and equated. To begin it is known that to balance the ball the forces must be balanced. This is used to find Eq.(1). Then using the assumption that there will be no slipping the angular and linear acceleration of the ball are related, shown in Eq.(2-3). 
 
-![](Figures/eq1.png) <br>
-![](Figures/eq2-3.png) <br>
-
+<p align="center">
+   <img width="700" img src="Figures/eq1.png" >
+   <img width="700" img src="Figures/eq2-3.png" >
+ </p>
 Now the rest of the entire systems force equation can be found, shown in Eq.(4-5). By rearranging the equation to having the input to the system, position, equal to the output, servo angle, the equation can be used to design a control system, this is shown in Eq.(6-7).
 
-![](Figures/eq4-7.png) <br>
+<p align="center">
+  <img height="300" img src="Figures/eq4-7.png" >
+</p>
 
 Next the system will be linearized, this process is shown below resluting in the linearized equation of the system Eq.(9-10).
 
-![](Figures/eq8-10.png) <br>
+<p align="center">
+  <img height="300" img src="Figures/eq8-10.png" >
+</p>
 
 The system will utilize a solid ball and as such will have the moment of inertia shown in Eq.(11). Also, from the system diagram in Figure 1, the angle of the servor motor and the angle of tilt for the plate are represented by Eq.(12-13). Then Eq.(13) is solved for *H* and plugged into Eq.(14) to have an equation that relates the servo gear angle with the position of the ball. Including the linearization, Eq.(14-15) are ready to be solved for the transfer function.
 
-![](Figures/eq11-15.png) <br>
+<p align="center">
+  <img height="300" img src="Figures/eq11-15.png" >
+</p>
 
 By taking the LapLace transform of the Eq.(14-15) the system is represented in s-domain shown in Eq.(16-17). Then by dividing the input of the system by the output the transfer function of the ball and plate system in two different axis are found, shown in Eq.(18-19)
 
-![](Figures/eq16-19.png) <br>
+<p align="center">
+  <img height="300" img src="Figures/eq16-19.png" >
+</p>
 
 ## III.Controller Design 
-Conventional modern control theory uses the state space representation approach and is useful because criteria desired to a control system can be accomplished. One very important advantage to this theory is the ability to manipulate pole placement while incorporating full state feedback. The beauty of the state space representation is that it allows higher order systems to be modeled as several first order systems. However for this report we are using state space only to check for controllability and observability.  Because humans are spaciall thinkers that are limited, the rest of the control theory is handled by software that makes using state space representations easy. 
+Conventional modern control theory uses the state space representation approach and is useful because criteria desired to a control system can be accomplished. One very important advantage to this theory is the ability to manipulate pole placement while incorporating full state feedback. The beauty of the state space representation is that it allows higher order systems to be modeled as several first order systems. However for this report we are using state space only to check for controllability and observability.  Due to the complexitiy of matrix operations, the rest of the control theory is handled by software that makes using state space representations or the transfer function. 
+
+<p align="center">
+  <img height="600" img src="Figures/TF_SPR.png" >
+  <img height="600" img src="Figures/outputTF.png" >
+</p>
+
+With the state space representation the controlability and oberservability of the ball and plate system can be determined. This done by using:
+<p align="center">
+Qc = [B AB A^2b A^3B]
+&  Qo = [C AC A^2C A^3C]
+</p>
+Using these equation the controlability and observability of the system are found to not be zero indicating that the ball and plate system can be controlled and observed. 
+
 ## V.Simulink
 
 ## VI.Matlab and Coppelia
