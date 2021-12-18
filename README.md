@@ -102,7 +102,7 @@ With this model the control system is created using simulink. The control system
   <img width="700" img src="Figures/BallOnPlateSimulink.png" >
 </p>
 
-For the verification of the system stability the scope tool was added and the generated the following step response. It is noticed that the percent overshoot of the system is under 5% and the settling time of less than 4 seconds. 
+For the verification of the system stability the scope tool was added and generated the following step response. It is noticed that the percent overshoot of the system is under 5% and the settling time of less than 4 seconds. 
 
 <p align="center">
   <img width="700" img src="Figures/Simulinkstepreps.png" >
